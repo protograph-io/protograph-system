@@ -1,0 +1,7 @@
+.highlighted-code {
+    border-radius: 4px;
+    overflow: hidden;
+    .CodeMirror-lines {
+        padding: 4px 20px 4px 15px;
+    }
+}

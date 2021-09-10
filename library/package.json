@@ -1,0 +1,79 @@
+{
+  "name": "protograph",
+  "version": "1.0.0",
+  "description": "A simple and approachable language for specifying graph (network/node-link) visualizations",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "start": "npm run watch",
+    "prepare": "npm run build",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "files": [
+    "lib"
+  ],
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [
+    "visualization",
+    "animation",
+    "cytoscape",
+    "graph",
+    "graph-theory",
+    "network",
+    "node-link"
+  ],
+  "author": "Anonymized <protograph.io@gmail.com>",
+  "contributors": [
+    "Anonymized"
+  ],
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "import/no-anonymous-default-export": "off",
+      "no-use-before-define": "off",
+      "@typescript-eslint/no-use-before-define": [
+        "error"
+      ],
+      "jsx-a11y/anchor-is-valid": "off"
+    }
+  },
+  "dependencies": {
+    "cytoscape": "^3.18.1",
+    "cytoscape-cola": "^2.4.0",
+    "cytoscape-popper": "^2.0.0",
+    "cytoscape-svg": "^0.3.1",
+    "pegjs": "^0.10.0",
+    "tippy.js": "^6.3.1"
+  },
+  "devDependencies": {
+    "@types/codemirror": "0.0.108",
+    "@types/cytoscape": "^3.14.12",
+    "@types/file-saver": "^2.0.2",
+    "@types/jest": "^26.0.22",
+    "@types/node": "^14.14.36",
+    "@types/pegjs": "^0.10.2",
+    "@types/react": "^17.0.3",
+    "@types/react-cytoscapejs": "^1.2.0",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-hamburger-menu": "0.0.3",
+    "@types/reactour": "^1.18.1",
+    "@types/recordrtc": "^5.6.5",
+    "@types/url-safe-base64": "^1.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.25.0",
+    "eslint-plugin-react": "^7.23.2",
+    "grammkit": "^0.7.1",
+    "typedoc": "^0.20.35",
+    "typedoc-github-wiki-theme": "^0.2.0",
+    "typedoc-plugin-markdown": "^3.6.1",
+    "typescript": "^4.2.3"
+  }
+}

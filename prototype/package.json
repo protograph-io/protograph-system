@@ -1,0 +1,112 @@
+{
+  "name": "protograph-tool",
+  "description": "A simple and approachable language for specifying graph (network/node-link) visualizations",
+  "author": "Anonymized <protograph.io@gmail.com>",
+  "contributors": [
+    "Anonymized"
+  ],
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@supabase/supabase-js": "^1.21.0",
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.3",
+    "babel-loader": "8.1.0",
+    "canvas-toBlob": "^1.0.0",
+    "classnames": "^2.3.1",
+    "codemirror": "^5.60.0",
+    "cytoscape": "^3.18.1",
+    "cytoscape-cola": "^2.4.0",
+    "cytoscape-popper": "^2.0.0",
+    "date-fns": "^2.23.0",
+    "file-saver": "^2.0.5",
+    "jszip": "^3.6.0",
+    "lzutf8": "^0.6.0",
+    "node-sass": "^6.0.0",
+    "pegjs": "^0.10.0",
+    "protograph": "../library",
+    "react": "^17.0.2",
+    "react-clipboard.js": "^2.0.16",
+    "react-codemirror2": "^7.2.1",
+    "react-cytoscapejs": "^1.2.1",
+    "react-dimensions-hook": "^1.0.3",
+    "react-dom": "^17.0.2",
+    "react-hamburger-menu": "^1.2.1",
+    "react-ionicons": "^4.2.0",
+    "react-markdown": "^6.0.1",
+    "react-player": "^2.9.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-sketch2": "^0.5.7",
+    "react-twitter-widgets": "^1.10.0",
+    "reactour": "^1.18.3",
+    "recordrtc": "^5.6.2",
+    "remark-gfm": "^1.0.0",
+    "rrweb": "^1.0.0",
+    "styled-components": "^4.4.1",
+    "tippy.js": "^6.3.1",
+    "typescript": "^4.2.3",
+    "url-safe-base64": "^1.1.1",
+    "use-dynamic-refs": "^1.0.0",
+    "web-vitals": "^1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "visualize-grammar": "grammkit src/grammar/base_grammar.pegjs",
+    "generate": "typedoc"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "import/no-anonymous-default-export": "off",
+      "no-use-before-define": "off",
+      "@typescript-eslint/no-use-before-define": [
+        "error"
+      ],
+      "jsx-a11y/anchor-is-valid": "off"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/codemirror": "0.0.108",
+    "@types/cytoscape": "^3.14.12",
+    "@types/file-saver": "^2.0.2",
+    "@types/jest": "^26.0.22",
+    "@types/node": "^14.14.36",
+    "@types/pegjs": "^0.10.2",
+    "@types/react": "^17.0.3",
+    "@types/react-cytoscapejs": "^1.2.0",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-hamburger-menu": "0.0.3",
+    "@types/react-router-dom": "^5.1.8",
+    "@types/reactour": "^1.18.1",
+    "@types/recordrtc": "^5.6.5",
+    "@types/url-safe-base64": "^1.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.25.0",
+    "eslint-plugin-react": "^7.23.2",
+    "grammkit": "^0.7.1",
+    "typedoc": "^0.20.35",
+    "typedoc-github-wiki-theme": "^0.2.0",
+    "typedoc-plugin-markdown": "^3.6.1"
+  }
+}

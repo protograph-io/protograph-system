@@ -1,0 +1,13 @@
+{
+    "name": "ProtoGraph",
+    "readme": "CONTRIBUTING.md",
+    "entryDocument": "CONTRIBUTING.md",
+    "listInvalidSymbolLinks": true,
+    "entryPoints": ["src/core/Parser.ts", "src/core/AutoComplete.ts", "src/core/ExtensionLoader.ts", "src/core/Core.ts", "src/core/types.ts", "src/grammar/grammar.types.ts"],
+    "disableOutputCheck": true,
+    "excludeNotDocumented": true,
+    "excludePrivate": true,
+    "excludeProtected": true,
+    "plugin": "typedoc-plugin-markdown",
+    "theme": "./node_modules/typedoc-github-wiki-theme/dist"
+}

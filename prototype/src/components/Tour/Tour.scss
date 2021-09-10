@@ -1,0 +1,31 @@
+code {
+    font-family: monospace;
+    color: black;
+    direction: ltr;
+    font-size: 1.2em;
+    background-color: #263238;
+    color: #eeffff;
+    font-weight: bold;
+    padding: 0 6px;
+    border-radius: 2px;
+}
+
+
+.reactour {
+    line-height: 1.4;
+    padding: 24px 30px;
+    padding: 36px 36px;
+    span[data-tour-elem=badge] {
+        font-size: 1.2rem;
+    }
+}
+
+// outline focus of tour
+.reactour__mask--disable-interaction {
+    stroke: red;
+    stroke-width: 4px;
+    rx: 6px;
+    ry: 6px;
+    display: block;
+    fill: none
+}
