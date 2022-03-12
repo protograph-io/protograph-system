@@ -124,12 +124,12 @@ const debouncedSaveProgress = debounce((code: string, frames: string[]) => {
 
 
 
-
+const tourFlag = url.get('tour') === "true";
 
 function PrototypeTool() {
   const [isShareOpen, setIsShareOpen] = useState(false);
   const [starterCode, setStarterCode] = useState(saved);
-  const [isWelcomeOpen, setIsWelcomeOpen] = useState(!newUser && !starterCode && (saved === undefined || saved === null));
+  const [isWelcomeOpen, setIsWelcomeOpen] = useState(!tourFlag && !newUser && !starterCode && (saved === undefined || saved === null));
 
   // useEffect(() => {
 
@@ -151,7 +151,7 @@ function PrototypeTool() {
         setIsWelcomeOpen(false);
       }} onClose={() => setIsWelcomeOpen(false)}></Welcome>}
       {isShareOpen && <Share onClose={() => setIsShareOpen(false)}></Share>}
-      <Tour isTourOpen={newUser && !starterCode}></Tour>
+      <Tour isTourOpen={(newUser && !starterCode) || tourFlag}></Tour>
       <ViewProvider>
         <DocsViewProvider>
           {

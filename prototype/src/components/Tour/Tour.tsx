@@ -364,10 +364,10 @@ export function Tour({ isTourOpen: _isTourOpen, rememberUser = true, onFinish, s
             steps={_steps}
             isOpen={isTourOpen && openOverride}
             onRequestClose={() => {
-                if (stepIndex === _steps.length - 1) {
+                // if (stepIndex === _steps.length - 1) {
                     setIsTourOpen(false);
                     onClose();
-                }
+                // }
             }}
             disableDotsNavigation={true}
             disableFocusLock={true}
