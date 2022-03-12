@@ -61,6 +61,9 @@ export const Toolbar: React.FC<{ onNew: (() => void) | null | undefined, onShare
                 {
                     !!onNew && <div className="button button--clear hide-on-mobile-inline-block" onClick={onNew}>New</div>
                 }
+                {
+                    <a className="button button--clear hide-on-mobile-inline-block" href={window.location.protocol + '//' + window.location.host + window.location.pathname + `?tour=true`} style={{textDecoration: "none"}}>New with Tour</a>
+                }
             </div>
             <div className="right">
                 <DocsPositionButtonGroup></DocsPositionButtonGroup>
