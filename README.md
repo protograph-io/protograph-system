@@ -9,3 +9,5 @@ Authors: Anonymized
 ProtoGraph is an extensible graph (node-link) visualization and animation system.
 
 Visit the live demo [here](https://protograph.io/) to interact with the the ProtoGraph system: [https://protograph.io/](https://protograph.io/)
+
+Check out the [docs](https://protograph.io/docs.html) to learn more about the ProtoGraph language used in the tool: [https://protograph.io/docs.html](https://protograph.io/docs.html)

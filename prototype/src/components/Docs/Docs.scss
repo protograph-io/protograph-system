@@ -30,6 +30,9 @@
         z-index: 5;
         padding-top: calc(1.5rem + 1.5rem + 10px);
         padding-top: calc(1.5rem + 1rem + 10px);
+        .docs-page & {
+
+        }
     }
     &-wrapper {
         padding: 1.5rem;
@@ -50,6 +53,9 @@
     border: solid 10px #263238;
     border-top: none;
     position: relative;
+    &.docs-page {
+        border: none;
+    }
 
     &.floating-right {
         border: none;

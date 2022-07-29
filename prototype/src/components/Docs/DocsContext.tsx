@@ -16,7 +16,7 @@ export type DocsViewContextType = {
     addToStack: (link: string) => void,
     goBackTo: (link: string) => void
 };
-const defaultDocsViewContext: DocsViewContextType = {
+export const defaultDocsViewContext: DocsViewContextType = {
     position: "hidden",
     setPosition: () => undefined,
     docsGenerator: undefined as unknown as InstanceType<typeof DocsGenerator>,

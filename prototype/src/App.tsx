@@ -5,6 +5,8 @@ import {
 } from "react-router-dom";
 import 'rrweb/dist/rrweb.min.css';
 import './App.scss';
+import { Docs } from './components/Docs/Docs';
+import { defaultDocsViewContext, DocsViewProvider } from './components/Docs/DocsContext';
 import PrototypeTool from './pages/PrototypeTool';
 import SketchToCode from "./pages/SketchToCode/SketchToCode";
 import Study from './pages/Study';
@@ -23,6 +25,26 @@ export function App() {
           <Route path="/" exact>
             <PrototypeTool></PrototypeTool>
           </Route>
+          <Route path="/docs">
+            <DocsViewProvider>
+              <Docs showIfPosition={defaultDocsViewContext.position} className="docs-page"></Docs>
+            </DocsViewProvider>
+          </Route>
+          <Route path="/tool/docs">
+            <DocsViewProvider>
+              <Docs showIfPosition={defaultDocsViewContext.position} className="docs-page"></Docs>
+            </DocsViewProvider>
+          </Route>
+          <Route path="/docs/">
+            <DocsViewProvider>
+              <Docs showIfPosition={defaultDocsViewContext.position} className="docs-page"></Docs>
+            </DocsViewProvider>
+          </Route>
+          <Route path="/tool/docs/">
+            <DocsViewProvider>
+              <Docs showIfPosition={defaultDocsViewContext.position} className="docs-page"></Docs>
+            </DocsViewProvider>
+          </Route>
           <Route path="/tool/" exact>
             <PrototypeTool></PrototypeTool>
           </Route>
@@ -39,17 +61,17 @@ export function App() {
             <ToolReplayer></ToolReplayer>
           </Route>
           <Route path="/sketch-to-code">
-            <SketchToCode onNext={() => {}}></SketchToCode>
+            <SketchToCode onNext={() => { }}></SketchToCode>
           </Route>
           <Route path="/tool/sketch-to-code">
-            <SketchToCode onNext={() => {}}></SketchToCode>
+            <SketchToCode onNext={() => { }}></SketchToCode>
           </Route>
           <Route path="/study">
             <Study></Study>
             {/* <CodeToSketch></CodeToSketch> */}
           </Route>
           <Route path="/tool/study">
-          <Study></Study>
+            <Study></Study>
             {/* <CodeToSketch></CodeToSketch> */}
           </Route>
         </Switch>
