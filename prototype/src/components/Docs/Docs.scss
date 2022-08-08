@@ -1,4 +1,13 @@
 .docs {
+    &_search {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border: solid 1px #D9D9D9;
+        padding: 8px 12px;
+        font-size: 1em;
+        line-height: 1.5;
+    }
     h1 {
         // font-size: 18px;
         text-align: left;
